@@ -1,20 +1,43 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-$body-background: #fafafa;
-$body-color: #444;
 
 body {
-  background: $body-background;
-  color: $body-color;
-  font-family: sans-serif;
+  @apply bg-black text-white font-sans;
 }
 
-h1, nav, footer {
-  text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  @apply font-cursive;
 }
 
-main {
-  margin: 4rem auto;
-  max-width: 60rem;
+h1 {
+  @apply text-4xl mb-3;
+}
+
+h2 {
+  @apply text-3xl mb-2;
+}
+
+h3 {
+  @apply text-2xl mb-1;
+}
+
+h4 {
+  @apply text-xl mb-1;
+}
+
+.lead {
+  @apply text-lg;
+}
+
+.nav-link {
+  @apply font-cursive m-2 px-1;
+
+  &.active {
+    @apply text-purple-600;
+  }
+}
+
+footer {
+  @apply text-center text-sm mt-6;
 }

@@ -4,7 +4,12 @@ module.exports = {
     content: ["./src/**/*.html"],
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "sans": [ "'Monserrat'", "sans-serif" ],
+        "cursive": ["'Permanent\ Marker'", "curisive"]
+      }
+    },
   },
   variants: {},
   plugins: [],
